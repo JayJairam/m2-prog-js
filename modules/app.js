@@ -1,51 +1,45 @@
+import {Tree_Render} from "./boomrenderer.js";
+import {Tree_V_Render} from "./boomrenderer.js";
+import { House_Render } from "./huisrenderer.js";
+
 class App
 {
     runApplication()
     {
-        let canvasvariable=document.getElementById("canvasId")
-        console.log(canvasvariable)
+        document.body.style.overflow = "hidden";
+        let canvas = document.getElementById('canvasId');
+        let renders = 30;
+        let g = canvas.getContext("2d");
 
-        let g = canvasvariable.getContext("2d");
-        g.beginPath()
-        g.fillStyle = "red";
-        g.moveTo(300,100);
-        g.lineTo(700,200);
-        g.lineTo(600,400);
-        g.lineTo(200,300);
-        g.closePath();
-        g.stroke();
-        g.fill()
+        canvas.height = screen.height;
+        canvas.width = screen.width;
+        
 
-        g.beginPath()
-        g.fillStyle = "grey";
-        g.moveTo(200,300)
-        g.lineTo(200,500)
-        g.lineTo(600,600)
-        g.lineTo(600,400)
-        g.closePath()
-        g.stroke()
-        g.fill()
+        for (let i = 0; i < renders; i++) {
+            let x = Math.random() * screen.width;
+            let y = Math.random() * screen.height;
+            let n = Math.floor(Math.random() * 3 + 1);
+            if (n == 1) {
+                House_Render.Draw(x,y,g);
+            }
+            else if(n == 2) {
+                Tree_Render.Draw(x,y,g);
+            }
+            else if(n == 3) {
+                Tree_V_Render.Draw(x,y,g);
+            }
 
-        g.beginPath()
-        g.fillStyle = "grey";
-        g.moveTo(600,400)
-        g.lineTo(600,600)
-        g.lineTo(800,500)
-        g.lineTo(800,300)
-        g.closePath()
-        g.stroke()
-        g.fill()
-
-        g.beginPath()
-        g.fillStyle = "grey";
-        g.moveTo(700,200)
-        g.lineTo(600,400)
-        g.lineTo(800,300)
-        g.closePath()
-        g.stroke()
-        g.fill()
+            let n1 = Math.floor(Math.random() * 5 + 1);
+            let n2 = Math.floor(Math.random() * 5 + 1);
+            let n3 = Math.floor(Math.random() * 5 + 1);
+            let n4 = Math.floor(Math.random() * 5 + 1);
+            let n5 = Math.floor(Math.random() * 5 + 1);
+            let n6 = Math.floor(Math.random() * 5 + 1);
+            document.body.style.background = "#"+n1+n2+n3+n4+n5+n6;
+          }
+        
     }
-    
+
 }
 
 let app = new App();
