@@ -15,7 +15,7 @@ class HouseRender
 
         
         g.beginPath()
-        g.fillStyle = "#555555";
+        g.fillStyle = "red";
         g.moveTo(x,y);
         g.lineTo(x - 10,y + 20);
         g.lineTo(x + 30, y + 30);
@@ -26,7 +26,7 @@ class HouseRender
         
         
         g.beginPath()
-        g.fillStyle = "#666666";
+        g.fillStyle = "red";
         g.moveTo(x + 40, y + 10);
         g.lineTo(x + 30, y + 30);
         g.lineTo(x + 50,y + 20);
@@ -36,7 +36,7 @@ class HouseRender
 
         
         g.beginPath()
-        g.fillStyle = "#DDDDDD";
+        g.fillStyle = "red";
         g.moveTo(x - 10, y + 20);
         g.lineTo(x + -10, y + 40); 
         g.lineTo(x + 30, y + 50);
@@ -47,7 +47,7 @@ class HouseRender
 
         
         g.beginPath()
-        g.fillStyle = "#7777FF";
+        g.fillStyle = "black";
         g.moveTo(x - 5, y + 24);
         g.lineTo(x - 5, y + 32);
         g.lineTo(x + 5, y + 34.5);
@@ -58,7 +58,7 @@ class HouseRender
  
         
         g.beginPath()
-        g.fillStyle = "#BBBBBB"
+        g.fillStyle = "red"
         g.moveTo(x + 30, y + 30);
         g.lineTo(x + 30, y + 50);
         g.lineTo(x + 50, y + 40);
