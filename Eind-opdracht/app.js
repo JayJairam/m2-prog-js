@@ -30,23 +30,45 @@ class App {
 
 
         //boom//
+        g.beginPath()
+        g.fillStyle = "brown";
+        g.moveTo(190,550)
+        g.lineTo(190,625)
+        g.lineTo(170,625)
+        g.lineTo(170,550)
+        g.closePath()
+        g.stroke()
+        g.fill()
 
         g.beginPath()
         g.fillStyle = "green"
-        g.arc(180, 550, 25, 0, 2 * Math.PI)
+        g.arc(180, 550, 40, 0, 2 * Math.PI)
         g.closePath()
         g.stroke()
         g.fill()
         g.beginPath()
 
+        g.beginPath()
         g.fillStyle = "brown";
-        g.moveTo(180,550)
-        g.lineTo(310,565)
-        g.lineTo(310,565)
-        g.lineTo(290,615)
-        g.closePath();
+        g.moveTo(320,550)
+        g.lineTo(320,625)
+        g.lineTo(290,625)
+        g.lineTo(290,550)
+        g.closePath()
         g.stroke()
         g.fill()
+
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(300, 550, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+        //boom//
+
+        
 
 
         //hous//
