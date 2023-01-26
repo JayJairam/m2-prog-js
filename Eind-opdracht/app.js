@@ -50,6 +50,42 @@ class App {
 
         g.beginPath()
         g.fillStyle = "brown";
+        g.moveTo(530,550)
+        g.lineTo(530,625)
+        g.lineTo(510,625)
+        g.lineTo(510,550)
+        g.closePath()
+        g.stroke()
+        g.fill()
+
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(520, 550, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+        g.beginPath()
+        g.fillStyle = "brown";
+        g.moveTo(690,550)
+        g.lineTo(690,625)
+        g.lineTo(670,625)
+        g.lineTo(670,550)
+        g.closePath()
+        g.stroke()
+        g.fill()
+
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(680, 550, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+        g.beginPath()
+        g.fillStyle = "brown";
         g.moveTo(320,550)
         g.lineTo(320,625)
         g.lineTo(290,625)
@@ -60,7 +96,82 @@ class App {
 
         g.beginPath()
         g.fillStyle = "green"
-        g.arc(300, 550, 40, 0, 2 * Math.PI)
+        g.arc(305, 550, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+
+
+        g.beginPath()
+        g.fillStyle = "brown";
+        g.moveTo(320,275)
+        g.lineTo(320,350)
+        g.lineTo(290,350)
+        g.lineTo(290,275)
+        g.closePath()
+        g.stroke()
+        g.fill()
+
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(305, 275, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+        g.beginPath()
+        g.fillStyle = "brown";
+        g.moveTo(190,275)
+        g.lineTo(190,350)
+        g.lineTo(170,350)
+        g.lineTo(170,275)
+        g.closePath()
+        g.stroke()
+        g.fill()
+
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(180, 275, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+        g.beginPath()
+        g.fillStyle = "brown";
+        g.moveTo(530,275)
+        g.lineTo(530,350)
+        g.lineTo(510,350)
+        g.lineTo(510,275)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(520, 275, 40, 0, 2 * Math.PI)
+        g.closePath()
+        g.stroke()
+        g.fill()
+        g.beginPath()
+
+
+        g.beginPath()
+        g.fillStyle = "brown";
+        g.moveTo(690,275)
+        g.lineTo(690,350)
+        g.lineTo(670,350)
+        g.lineTo(670,275)
+        g.closePath()
+        g.stroke()
+        g.fill()
+
+        g.beginPath()
+        g.fillStyle = "green"
+        g.arc(680, 275, 40, 0, 2 * Math.PI)
         g.closePath()
         g.stroke()
         g.fill()
